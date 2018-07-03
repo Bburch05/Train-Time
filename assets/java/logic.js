@@ -71,7 +71,6 @@ $("#add-train").on("click",function(event){
             $("#alert-holder").append("<div class='alert alert-danger' role='alert'><strong>Missing a Train Destination!</strong></div>");
         }
         if(!trainFreq){
-            console.log("No Train Freq")
             $("#alert-holder").append("<div class='alert alert-danger' role='alert'><strong>Missing Train Freq!</strong></div>");
         }
     }

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Train Scheduler</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>If a Train leaves at 8:00pm...</h1>
+            <p class="lead">then it arrives...when?</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12 trains-div">
+                <h1 class="transit-head">Trains in Transit</h1>
+                <table class="table table-striped table-dark trains">
+                   <tr>
+                        <th>Train Name</th>
+                        <th>Train Destination</th>
+                        <th>Frequency(mins)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-div">
+                <h1 class="newtrainHead">Add a New Train</h1>
+                    <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="train-dest" placeholder="Train Destination">
+                            </div>
+                            <div class="form-group">
+                              <input type="number" class="form-control" id="train-time" placeholder="First Train (Military Time)" min="0000" max="2399">
+                            </div>
+                            <div class="form-group">
+                                    <input type="number" class="form-control" id="train-freq" min="1" placeholder="Train Frequency (Mins)">
+                            </div>
+                            <input type="submit" id="add-train" class="btn btn-primary" value="Add Train" />
+                          </form>
+            </div>
+            <div class="col-md-4" id="alert-holder">
+
+            </div> 
+        </div>
+
+
+
+    </div>  
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.js"></script>
+    <script src="assets/java/logic.js"></script>
+
+  </body>
+</html>

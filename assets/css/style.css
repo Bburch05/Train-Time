@@ -1,0 +1,42 @@
+body {
+    background-color: #272D4C;
+}
+
+.jumbotron {
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    background-color: cornflowerblue;
+    color: rgb(23, 34, 54);
+}
+
+.newtrainHead {
+    margin-bottom: 20px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.transit-head {
+ background-color: cornflowerblue;
+ color: rgb(23, 34, 54);
+ border-left: 5px outset cornflowerblue;
+ border-right: 5px outset cornflowerblue;
+ border-bottom: 5px outset cornflowerblue;
+ margin-top: .5px;
+ border-bottom-right-radius: 3px;
+ border-bottom-left-radius: 3px; 
+ text-align: center;
+}
+
+.trains-div {
+    background-image: url("../image/wild_oliva.png");
+    border: 2px solid cornflowerblue;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.form-div {
+    background-color: white;
+    border: #555 2px solid;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}

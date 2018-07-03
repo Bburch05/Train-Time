@@ -10,7 +10,6 @@
   firebase.initializeApp(config);
 
   var database = firebase.database();
-  var AlertTimeout
 
 database.ref().on("child_added", function(snap){
     var results = snap.val();
@@ -18,7 +17,7 @@ database.ref().on("child_added", function(snap){
     tr.append("<td>" + results.name + "</td>");
     tr.append("<td>" + results.dest + "</td>");
     tr.append("<td>" + results.frequency + "</td>");
-    var startTime = moment().format("HH:mm");
+    var startTime = results.start;
     var frequency = parseInt(results.frequency);
 
     var startTimeConverted = moment(startTime, "HH:mm").subtract(1, "years");

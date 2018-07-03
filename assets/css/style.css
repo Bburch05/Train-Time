@@ -18,9 +18,10 @@ body {
 .transit-head {
  background-color: cornflowerblue;
  color: rgb(23, 34, 54);
- border-left: 5px outset cornflowerblue;
- border-right: 5px outset cornflowerblue;
- border-bottom: 5px outset cornflowerblue;
+ border-left: 5px solid cornflowerblue;
+ border-right: 5px solid cornflowerblue;
+ border-bottom: 5px solid cornflowerblue;
+ 
  margin-top: .5px;
  border-bottom-right-radius: 3px;
  border-bottom-left-radius: 3px; 
